@@ -9,19 +9,24 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
-    line-height: 1.5em; 
+    line-height: 1.5em;
+    /* limit the overall page width and center it */
+    max-width: 900px;
+    margin: 0 auto;            /* horizontal centering */
+    padding: 0 10px;           /* optional side padding on small viewports */
 }
 
 main {
     max-width: 900px;
     margin: auto;
+    /* main already centered but body now constrains overall layout */
 }
 
 p {
     margin-bottom: 10px;
     text-align: justify;
     text-indent: 20px;
-    margin: auto;
+    /* paragraphs should flow normally; no auto margins */
     padding: 10px;
 }
 
